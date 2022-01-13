@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ToggleGroup?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="840.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rtpgui.HelloController">
+    <children>
+        <Button layoutX="531.0" layoutY="196.0" mnemonicParsing="false" onAction="#onResultButtonClick" prefHeight="37.0" prefWidth="193.0" text="Решение" />
+        <TextArea id="Text1" fx:id="inputText" layoutX="14.0" layoutY="25.0" prefHeight="200.0" prefWidth="450.0" />
+        <TextArea id="Text2" fx:id="outputText" layoutX="14.0" layoutY="261.0" prefHeight="217.0" prefWidth="450.0" />
+        <RadioButton fx:id="rb1" layoutX="486.0" layoutY="94.0" mnemonicParsing="false" text="Алгоритм Форда - Фалкерсона" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="main" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rb2" layoutX="486.0" layoutY="125.0" mnemonicParsing="false" text="Алгоритм Диница" textFill="WHITE" toggleGroup="$main">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rb3" layoutX="488.0" layoutY="157.0" mnemonicParsing="false" text="Алгоритм проталкивания предпотока" textFill="WHITE" toggleGroup="$main">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+    </children>
+</AnchorPane>
