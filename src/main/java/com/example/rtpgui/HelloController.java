@@ -78,8 +78,12 @@ public class HelloController {
                     }
                     break;
                 default:
+                    messageError("Выберите алкоритм!!");
                     break;
             }
+        }
+        else {
+            messageError("Введите данные!!");
         }
     }
 
